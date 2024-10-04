@@ -93,10 +93,19 @@
                         <p>Deliver to <br><b>all</b></p>
                     </div>
 
-                    <button>
-                        <input type="search" id="search" placeholder="Search for products,categories or brands...">
-                        <img src="assets/search.svg" alt="search">
-                    </button>
+                    <div class="search-container">
+                        <button>
+                            <input type="search" id="searchInput" placeholder="Search for products,categories or brands...">
+                            <img src="assets/search.svg" alt="search">
+                        </button>
+                    </div>
+
+                    <!-- <div class="search-container">
+                        <input type="search" id="searchInput" placeholder="Search for products, categories, or brands...">
+                        <button>
+                            <img src="assets/search.svg" alt="search">
+                        </button>
+                    </div> -->
 
                     <div class="item">
                         <ul>
@@ -105,10 +114,12 @@
                                 <p>Account</p>
                             </a></li>
                             <li><a href="#">
+                                <small>0</small>
                                 <img src="assets/like.svg" alt="like">
                                 <p>Wishlist</p>
                             </a></li>
                             <li><a href="#">
+                                <small>0</small>
                                 <img src="assets/cart.svg" alt="cart">
                                 <p>Your Cart</p>
                             </a></li>
@@ -124,8 +135,8 @@
                     <div class="left">
                         <ul>
                             <li><a href="#">Home <img src="assets/list-icon.svg" alt="list-icon"></a></li>
-                            <li><a href="#">Shop <img src="assets/list-icon.svg" alt="list-icon"></a></li>
-                            <li><a href="#">Fruits & Vegetables</a></li>
+                            <li><a href="#" class="col">Shop <img src="assets/list-icon.svg" alt="list-icon"></a></li>
+                            <li><a href="#" class="col">Fruits & Vegetables</a></li>
                             <li><a href="#">Beverages</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Contact</a></li>
@@ -303,10 +314,620 @@
                             <a href="#" class="button">Shop Now <img src="assets/arrow.svg" alt="arrow"></a>
                         </div>
                     </div>
+
+                    <div class="banner">
+                        <p>Showing all 16 results</p>
+                        <div class="right">
+                            <p class="sort">Sort: <b>Sort by latest</b></p>
+                            <span class="item">
+                                <p class="show">Show: <b>20 Items</b></p>
+                                <img class="one" src="assets/widget.svg" alt="widget">
+                                <img src="assets/menu.svg" alt="menu">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div id="container" class="container">
+                        <div class="item">
+                            <div class="top">
+                                <span>
+                                    <small>75%</small>
+                                    <img src="assets/like.svg" alt="like">
+                                </span>
+                                <a href="#"><img src="assets/potatoes.jpg" alt="potatoes"></a>
+                            </div>
+                            
+                            <ul>
+                                <li><a href="#"><h2>Yellow Potatoes Whole Fresh, 5lb Bag</h2></a></li>
+                                <li>
+                                    <span class="one">
+                                        <img src="assets/star-4.5.png" alt="star">
+                                        <P>3</P>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="two">$0.50 <p>$1.99</p></span>
+                                </li>
+                                <li>
+                                    <span class="three">
+                                        <a href="#"><img src="assets/cart-white.svg" alt="cart-white"></a>
+                                        <p>IN STOCK</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item org">
+                            <div class="top">
+                                <span>
+                                    <small>50%</small>
+                                    <img src="assets/like.svg" alt="like">
+                                </span>
+                                <a href="#"><img src="assets/orange.jpg" alt="orange"></a>
+                            </div>
+                            <p class="org"><img src="assets/leaf-icon.svg" alt="leaf-icon">Organic</p>
+                            <ul>
+                                <li><a href="#"><h2>Large Bagged Oranges</h2></a></li>
+                                <li>
+                                    <span class="one">
+                                        <img src="assets/star-4.png" alt="star">
+                                        <P>3</P>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="two">$0.89 <p>$1.78</p></span>
+                                </li>
+                                <li>
+                                    <span class="three">
+                                        <a href="#"><img src="assets/cart-white.svg" alt="cart-white"></a>
+                                        <p>IN STOCK</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <div class="top">
+                                <span>
+                                    <small>31%</small>
+                                    <img src="assets/like.svg" alt="like">
+                                </span>
+                                <a href="#"><img src="assets/strawberry.jpg" alt="strawberry"></a>
+                            </div>
+                            
+                            <ul>
+                                <li><a href="#"><h2>Strawberries - 1lb</h2></a></li>
+                                <li>
+                                    <span class="one">
+                                        <img src="assets/star-4.png" alt="star">
+                                        <P>3</P>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="two">$1.50 <p>$2.15</p></span>
+                                </li>
+                                <li>
+                                    <span class="three">
+                                        <a href="#"><img src="assets/cart-white.svg" alt="cart-white"></a>
+                                        <p>IN STOCK</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <div class="top">
+                                <span>
+                                    <small>13%</small>
+                                    <img src="assets/like.svg" alt="like">
+                                </span>
+                                <a href="#"><img src="assets/simple-kitchen.jpg" alt="simple-kitchen"></a>
+                            </div>
+                            
+                            <ul>
+                                <li><a href="#"><h2>Simple Kitchen FD Sliced Strawberries-1.08lb</h2></a></li>
+                                <li>
+                                    <span class="one">
+                                        <img src="assets/star-2.5.png" alt="star">
+                                        <P>3</P>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="two">$21.90 <p>$24.90</p></span>
+                                </li>
+                                <li>
+                                    <span class="three">
+                                        <a href="#"><img src="assets/cart-white.svg" alt="cart-white"></a>
+                                        <p>IN STOCK</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <div class="top">
+                                <span>
+                                    <small>58%</small>
+                                    <img src="assets/like.svg" alt="like">
+                                </span>
+                                <a href="#"><img src="assets/apple.jpg" alt="apple"></a>
+                            </div>
+                            
+                            <ul>
+                                <li><a href="#"><h2>Peach - each</h2></a></li>
+                                <li>
+                                    <span class="one">
+                                        <img src="assets/star-3.5.png" alt="star">
+                                        <P>3</P>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="two">$0.75 <p>$1.75</p></span>
+                                </li>
+                                <li>
+                                    <span class="three">
+                                        <a href="#"><img src="assets/cart-white.svg" alt="cart-white"></a>
+                                        <p>IN STOCK</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item org">
+                            <div class="top">
+                                <span>
+                                    <small>56%</small>
+                                    <img src="assets/like.svg" alt="like">
+                                </span>
+                                <a href="#"><img src="assets/banana.jpg" alt="banana"></a>
+                            </div>
+                            <p class="org"><img src="assets/leaf-icon.svg" alt="leaf-icon">Organic</p>
+                            <ul>
+                                <li><a href="#"><h2>Marketside Fresh Organic Bananas, Bunch</h2></a></li>
+                                <li>
+                                    <span class="one">
+                                        <img src="assets/star-3.png" alt="star">
+                                        <P>2</P>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="two">$0.89 <p>$1.99</p></span>
+                                </li>
+                                <li>
+                                    <span class="three">
+                                        <a href="#"><img src="assets/cart-white.svg" alt="cart-white"></a>
+                                        <p>IN STOCK</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <div class="top">
+                                <span>
+                                    <small>16%</small>
+                                    <img src="assets/like.svg" alt="like">
+                                </span>
+                                <a href="#"><img src="assets/wraps.jpg" alt="wraps"></a>
+                            </div>
+                            
+                            <ul>
+                                <li><a href="#"><h2>Large Garden Spinach & Herb Wrap Tortillas-...</h2></a></li>
+                                <li>
+                                    <span class="one">
+                                        <img src="assets/star-4.png" alt="star">
+                                        <P>3</P>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="two">$27.79 <p>$32.90</p></span>
+                                </li>
+                                <li>
+                                    <span class="three">
+                                        <a href="#"><img src="assets/cart-white.svg" alt="cart-white"></a>
+                                        <p>IN STOCK</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <div class="top">
+                                <span>
+                                    <small>10%</small>
+                                    <img src="assets/like.svg" alt="like">
+                                </span>
+                                <a href="#"><img src="assets/carmel-apple.jpg" alt="carmel-apple"></a>
+                            </div>
+                            
+                            <ul>
+                                <li><a href="#"><h2>Halloween Harvest Caramel Apple Soft Cramels-...</h2></a></li>
+                                <li>
+                                    <span class="one">
+                                        <img src="assets/star-3.png" alt="star">
+                                        <P>3</P>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="two">$19.37 <p>$21.37</p></span>
+                                </li>
+                                <li>
+                                    <span class="three">
+                                        <a href="#"><img src="assets/cart-white.svg" alt="cart-white"></a>
+                                        <p>IN STOCK</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <div class="top">
+                                <span>
+                                    <small>26%</small>
+                                    <img src="assets/like.svg" alt="like">
+                                </span>
+                                <a href="#"><img src="assets/brinjal.jpg" alt="brinjal"></a>
+                            </div>
+                            
+                            <ul>
+                                <li><a href="#"><h2>Fresh Purple Eggplant</h2></a></li>
+                                <li>
+                                    <span class="one">
+                                        <img src="assets/star-4.png" alt="star">
+                                        <P>3</P>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="two">$2.99 <p>$3.99</p></span>
+                                </li>
+                                <li>
+                                    <span class="three">
+                                        <a href="#"><img src="assets/cart-white.svg" alt="cart-white"></a>
+                                        <p>IN STOCK</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <div class="top">
+                                <span>
+                                    <small>50%</small>
+                                    <img src="assets/like.svg" alt="like">
+                                </span>
+                                <a href="#"><img src="assets/pomegranate.jpg" alt="pomegranate"></a>
+                            </div>
+                            
+                            <ul>
+                                <li><a href="#"><h2>Fresh Pomegranate, Each</h2></a></li>
+                                <li>
+                                    <span class="one">
+                                        <img src="assets/star-4.png" alt="star">
+                                        <P>3</P>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="two">$1.50 <p>$2.99</p></span>
+                                </li>
+                                <li>
+                                    <span class="three">
+                                        <a href="#"><img src="assets/cart-white.svg" alt="cart-white"></a>
+                                        <p>IN STOCK</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <div class="top">
+                                <span>
+                                    <small>75%</small>
+                                    <img src="assets/like.svg" alt="like">
+                                </span>
+                                <a href="#"><img src="assets/lemon.jpg" alt="lemon"></a>
+                            </div>
+                            
+                            <ul>
+                                <li><a href="#"><h2>Fresh Lemon, Each</h2></a></li>
+                                <li>
+                                    <span class="one">
+                                        <img src="assets/star-2.png" alt="star">
+                                        <P>2</P>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="two">$0.50 <p>$1.99</p></span>
+                                </li>
+                                <li>
+                                    <span class="three">
+                                        <a href="#"><img src="assets/cart-white.svg" alt="cart-white"></a>
+                                        <p>IN STOCK</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <div class="top">
+                                <span>
+                                    <small>14%</small>
+                                    <img src="assets/like.svg" alt="like">
+                                </span>
+                                <a href="#"><img src="assets/veg-1.jpg" alt="veg-1"></a>
+                            </div>
+                            
+                            <ul>
+                                <li><a href="#"><h2>Yellow Potatoes Whole Fresh, 5lb Bag</h2></a></li>
+                                <li>
+                                    <span class="one">
+                                        <img src="assets/star-3.png" alt="star">
+                                        <P>2</P>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="two">$12.79 <p>$14.79</p></span>
+                                </li>
+                                <li>
+                                    <span class="three">
+                                        <a href="#"><img src="assets/cart-white.svg" alt="cart-white"></a>
+                                        <p>IN STOCK</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <div class="top">
+                                <span>
+                                    <small>36%</small>
+                                    <img src="assets/like.svg" alt="like">
+                                </span>
+                                <a href="#"><img src="assets/veg-2.jpg" alt="veg-2"></a>
+                            </div>
+                            
+                            <ul>
+                                <li><a href="#"><h2>Fresh Broccoli Crowns, Each</h2></a></li>
+                                <li>
+                                    <span class="one">
+                                        <img src="assets/star-4.png" alt="star">
+                                        <P>3</P>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="two">$11.54 <p>$17.88</p></span>
+                                </li>
+                                <li>
+                                    <span class="three">
+                                        <a href="#"><img src="assets/cart-white.svg" alt="cart-white"></a>
+                                        <p>IN STOCK</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <div class="top">
+                                <span>
+                                    <small>41%</small>
+                                    <img src="assets/like.svg" alt="like">
+                                </span>
+                                <a href="#"><img src="assets/berries.jpg" alt="berries"></a>
+                            </div>
+                            
+                            <ul>
+                                <li><a href="#"><h2>Blackberries - 6oz</h2></a></li>
+                                <li>
+                                    <span class="one">
+                                        <img src="assets/star-4.png" alt="star">
+                                        <P>3</P>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="two">$2.99 <p>$4.99</p></span>
+                                </li>
+                                <li>
+                                    <span class="three">
+                                        <a href="#"><img src="assets/cart-white.svg" alt="cart-white"></a>
+                                        <p>IN STOCK</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <div class="top">
+                                <span>
+                                    <small>8%</small>
+                                    <img src="assets/like.svg" alt="like">
+                                </span>
+                                <a href="#"><img src="assets/quest.jpg" alt="quest"></a>
+                            </div>
+                            
+                            <ul>
+                                <li><a href="#"><h2>30g Protein Shake - Salted Cramel - 11fl oz - 4pk</h2></a></li>
+                                <li>
+                                    <span class="one">
+                                        <img src="assets/star-4.5.png" alt="star">
+                                        <P>3</P>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="two">$11.99 <p>$12.99</p></span>
+                                </li>
+                                <li>
+                                    <span class="three">
+                                        <a href="#"><img src="assets/cart-white.svg" alt="cart-white"></a>
+                                        <p>IN STOCK</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item org">
+                            <div class="top">
+                                <span>
+                                    <small>17%</small>
+                                    <img src="assets/like.svg" alt="like">
+                                </span>
+                                <a href="#"><img src="assets/green-apple.jpg" alt="green-apple"></a>
+                            </div>
+                            <p class="org"><img src="assets/leaf-icon.svg" alt="leaf-icon">Organic</p>
+                            <ul>
+                                <li><a href="#"><h2>Fresh Granny Smith Apple, Each</h2></a></li>
+                                <li>
+                                    <span class="one">
+                                        <img src="assets/star-5.png" alt="star">
+                                        <p>3</p>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="two">$15.99-$9.88</span>
+                                </li>
+                                <li>
+                                    <span class="three">
+                                        <a href="#"><img src="assets/cart-white.svg" alt="cart-white"></a>
+                                        <p>IN STOCK</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </section> <!-- #main > .wrapper > #content > .item_box-->
             </section> <!-- #main > .wrapper > #content -->
         </section> <!-- #main > .wrapper -->
     </section> <!-- #main -->
+
+    <footer>
+        <section class="wrapper">
+            <section class="top">
+                <div class="left">
+                    <h2>Join our newsletter for £10 offs</h2>
+                    <p>Register now to get latest updates on promotions & <br>
+                        coupons.Don't worry, we not spam!</p>
+                </div>
+                <div class="right">
+                    <button>
+                        <img src="assets/mail.svg" alt="">
+                        <input type="email" id="mail" placeholder="Enter your email address">
+                        <a href="#" class="button">SEND</a>
+                    </button>
+                    <p>By subscribing you agree to our <span>Terms & Conditions and Privacy & Cookies Policy.</span></p>
+                </div>
+            </section> <!-- footer > .wrapper > .top -->
+
+            <section class="middle">
+                <div class="left">
+                    <h3>Do You Need Help?</h3>
+                    <p class="main">Autoseligen syr. Nek diarask fröbomba. Nör <br>
+                        antipol kynoda nynat. Pressa fåmoska.</p>
+                    <ul>
+                        <li>
+                            <img src="assets/phone.svg" alt="phone">
+                            <span>Monday-Friday: 08am-9pm <p>0 800 300-353</p></span>
+                        </li>
+                        <li>
+                            <img src="assets/mail-1.svg" alt="mail">
+                            <span class="mail">Need help with your order? <p>info@example.com</p></span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="right">
+                    <div class="item">
+                        <h3>Make Money With Us</h3>
+                        <ul>
+                            <li><a href="#">Sell on Grogin</a></li>
+                            <li><a href="#">Sell Your Services on Grogin</a></li>
+                            <li><a href="#">Sell on Grogin Business</a></li>
+                            <li><a href="#">Sell Your Apps on Grogin</a></li>
+                            <li><a href="#">Become an Affilate</a></li>
+                            <li><a href="#">Advertise Your Products</a></li>
+                            <li><a href="#">Sell-Publish with Us</a></li>
+                            <li><a href="#">Become an Blowwe Vendor</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <h3>Let Us Help You</h3>
+                        <ul>
+                            <li><a href="#">Accessibility Statement</a></li>
+                            <li><a href="#">Your Orders</a></li>
+                            <li><a href="#">Returns & Replacements</a></li>
+                            <li><a href="#">Shipping Rates & Policies</a></li>
+                            <li><a href="#">Refund and Returns Policy</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Cookie Settings</a></li>
+                            <li><a href="#">Help Center</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <h3>Get to Know Us</h3>
+                        <ul>
+                            <li><a href="#">Careers for Grogin</a></li>
+                            <li><a href="#">About Grogin</a></li>
+                            <li><a href="#">Investors Relations</a></li>
+                            <li><a href="#">Grogin Devices</a></li>
+                            <li><a href="#">Customer Reviews</a></li>
+                            <li><a href="#">Social Responsibility</a></li>
+                            <li><a href="#">Store Locations</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item social">
+                        <h3>Download our app</h3>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="assets/playstore.svg" alt="playstore"></a>
+                                <p>Download App Get <br>
+                                    -10% Discount</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="assets/appstore.svg" alt="appstore"></a>
+                                <p>Download App Get <br>
+                                    -20% Discount</p>
+                            </li>
+                        </ul>
+
+                        <span class="logos">
+                            <h5>Follow us on social media:</h5>
+                            <ul>
+                                <li><a href="#"><img src="assets/facebook.svg" alt="facebook"></a></li>
+                                <li><a href="#"><img src="assets/twitter.svg" alt="twitter"></a></li>
+                                <li><a href="#"><img src="assets/instagram.svg" alt="instagram"></a></li>
+                                <li><a href="#"><img src="assets/linkedin.svg" alt="linkedin"></a></li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </section> <!-- footer > .wrapper > .middle -->
+
+            <section class="bottom">
+                <div class="left">
+                    <p>Copyright 2024 © Grogin WooCommerce WordPress Theme. All right reserved. Powered by <b>KLBTheme.</b></p>
+                    <span class="item">
+                        <img src="assets/visa.svg" alt="visa">
+                        <img src="assets/master-card.svg" alt="master-card">
+                        <img src="assets/paypal.svg" alt="paypal">
+                        <img src="assets/skrill.svg" alt="skrill">
+                        <img src="assets/Klarna.svg" alt="Klarna">
+                    </span>
+                </div>
+
+                <div class="right">
+                    <ul>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                    </ul>
+                </div>
+            </section> <!-- footer > .wrapper > .bottom -->
+        </section>  <!-- footer > .wrapper -->
+    </footer> <!-- footer -->
+
 </body>
+<script src="js/script.js"></script>
 </html>
 
