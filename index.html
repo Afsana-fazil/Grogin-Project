@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
+</head>    
 <body>
     <header>
         <section class="home">
@@ -94,18 +94,10 @@
                     </div>
 
                     <div class="search-container">
-                        <button>
-                            <input type="search" id="searchInput" placeholder="Search for products,categories or brands...">
-                            <img src="assets/search.svg" alt="search">
-                        </button>
+                        <input type="search" id="searchInput" placeholder="Search for products, categories or brands...">
+                        <img src="assets/search.svg" class="searchIcon" alt="search" onclick="toggleSearchInput()">
                     </div>
-
-                    <!-- <div class="search-container">
-                        <input type="search" id="searchInput" placeholder="Search for products, categories, or brands...">
-                        <button>
-                            <img src="assets/search.svg" alt="search">
-                        </button>
-                    </div> -->
+                    
 
                     <div class="item">
                         <ul>
@@ -133,15 +125,17 @@
             <section class="wrapper">
                 <div class="items">
                     <div class="left">
-                        <ul>
+                        <div class="hamburger" id="hamburger-icon" onclick="toggleMenu()">&#9776;</div>
+                        <ul class="menu" id="menu">
                             <li><a href="#">Home <img src="assets/list-icon.svg" alt="list-icon"></a></li>
                             <li><a href="#" class="col">Shop <img src="assets/list-icon.svg" alt="list-icon"></a></li>
                             <li><a href="#" class="col">Fruits & Vegetables</a></li>
-                            <li><a href="#">Beverages</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#" class="list">Beverages</a></li>                                                            
+                            <li><a href="#" class="list">Blog</a></li>
+                            <li><a href="#" class="list">Contact</a></li>
                         </ul>
                     </div>
+                    
 
                     <div class="right">
                         <ul>
@@ -158,6 +152,7 @@
     <section id="main">
         <section class="wrapper">
             <div class="main_top">
+                <button class="toggle">Filter</button>
                 <ul>
                     <li class="one"><a href="#">Home <img src="assets/list-icon.svg" alt="list-icon"></a></li>
                     <li><a href="#">Shop</a></li>
@@ -176,7 +171,7 @@
                             <img src="assets/Form → -.png" alt="Form">
                             <span>
                                 <h6>Max price</h6>
-                                <button><input type="number" placeholder="30"></button>
+                                <input type="number" placeholder="30">
                             </span>
                         </div>
 
@@ -807,11 +802,11 @@
                         coupons.Don't worry, we not spam!</p>
                 </div>
                 <div class="right">
-                    <button>
+                    <span class="input-container">
                         <img src="assets/mail.svg" alt="">
                         <input type="email" id="mail" placeholder="Enter your email address">
                         <a href="#" class="button">SEND</a>
-                    </button>
+                    </span>
                     <p>By subscribing you agree to our <span>Terms & Conditions and Privacy & Cookies Policy.</span></p>
                 </div>
             </section> <!-- footer > .wrapper > .top -->
